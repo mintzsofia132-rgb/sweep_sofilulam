@@ -48,8 +48,62 @@ LOG_FILE = "trades_paper.csv"
 
 # Calendario macro: completar/actualizar a mano desde federalreserve.gov y bls.gov.
 # El bot NO opera estos días antes de las 10:00 (nuestra ventana entera).
-MACRO_DATES = {
-    # "2026-07-28", "2026-07-29",   # ejemplo FOMC — VERIFICAR fechas reales
+MACRO_DATES = { # --- FOMC (fuente: Federal Reserve, confirmadas) ---
+    "2026-07-29",   # FOMC (decisión)
+    "2026-09-16",   # FOMC (decisión, con dot plot)
+    "2026-10-28",   # FOMC (decisión)
+    "2026-12-09",   # FOMC (decisión)
+    # --- CPI (8:30 ET, 2da semana; confirmá cada mes en bls.gov/schedule) ---
+    "2026-08-12",   # CPI julio (estimado)
+    "2026-09-11",   # CPI agosto (estimado)
+    "2026-10-13",   # CPI septiembre (estimado)
+    "2026-11-13",   # CPI octubre (estimado)
+    "2026-12-10",   # CPI noviembre (estimado)
+} # --- FOMC (fuente: Federal Reserve, confirmadas) ---
+    "2026-07-29",   # FOMC (decisión)
+    "2026-09-16",   # FOMC (decisión, con dot plot)
+    "2026-10-28",   # FOMC (decisión)
+    "2026-12-09",   # FOMC (decisión)
+    # --- CPI (8:30 ET, 2da semana; confirmá cada mes en bls.gov/schedule) ---
+    "2026-08-12",   # CPI julio (estimado)
+    "2026-09-11",   # CPI agosto (estimado)
+    "2026-10-13",   # CPI septiembre (estimado)
+    "2026-11-13",   # CPI octubre (estimado)
+    "2026-12-10",   # CPI noviembre (estimado)
+} # --- FOMC (fuente: Federal Reserve, confirmadas) ---
+    "2026-07-29",   # FOMC (decisión)
+    "2026-09-16",   # FOMC (decisión, con dot plot)
+    "2026-10-28",   # FOMC (decisión)
+    "2026-12-09",   # FOMC (decisión)
+    # --- CPI (8:30 ET, 2da semana; confirmá cada mes en bls.gov/schedule) ---
+    "2026-08-12",   # CPI julio (estimado)
+    "2026-09-11",   # CPI agosto (estimado)
+    "2026-10-13",   # CPI septiembre (estimado)
+    "2026-11-13",   # CPI octubre (estimado)
+    "2026-12-10",   # CPI noviembre (estimado)
+} # --- FOMC (fuente: Federal Reserve, confirmadas) ---
+    "2026-07-29",   # FOMC (decisión)
+    "2026-09-16",   # FOMC (decisión, con dot plot)
+    "2026-10-28",   # FOMC (decisión)
+    "2026-12-09",   # FOMC (decisión)
+    # --- CPI (8:30 ET, 2da semana; confirmá cada mes en bls.gov/schedule) ---
+    "2026-08-12",   # CPI julio (estimado)
+    "2026-09-11",   # CPI agosto (estimado)
+    "2026-10-13",   # CPI septiembre (estimado)
+    "2026-11-13",   # CPI octubre (estimado)
+    "2026-12-10",   # CPI noviembre (estimado)
+} # --- FOMC (fuente: Federal Reserve, confirmadas) ---
+    "2026-07-29",   # FOMC (decisión)
+    "2026-09-16",   # FOMC (decisión, con dot plot)
+    "2026-10-28",   # FOMC (decisión)
+    "2026-12-09",   # FOMC (decisión)
+    # --- CPI (8:30 ET, 2da semana; confirmá cada mes en bls.gov/schedule) ---
+    "2026-08-12",   # CPI julio (estimado)
+    "2026-09-11",   # CPI agosto (estimado)
+    "2026-10-13",   # CPI septiembre (estimado)
+    "2026-11-13",   # CPI octubre (estimado)
+    "2026-12-10",   # CPI noviembre (estimado)
+}
 }
 
 def is_nfp_day(d: date) -> bool:
